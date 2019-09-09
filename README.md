@@ -1,11 +1,13 @@
-Leaflet Coordinates Control
+Leaflet Copy Coordinates Control
 ===========================
-Captures mouseclick and displays its coordinates with easy way to copy them.
+Works with Leaflet to capture mouseclicks on a map and display the associated coordinates with an easy way to copy them.
+
+Derived from [original work by zimmicz](https://github.com/zimmicz/Leaflet-Coordinates-Control). Forked mainly to provide npm functionality.
 
 Demo
 ----
 
-See demo [here](http://zimmicz.github.io/Leaflet-Coordinates-Control/).
+See demo [here](https://tinjaw.github.io/Leaflet-Copy-Coordinates-Control/).
 
 How to use
 ----------
