@@ -1,0 +1,24 @@
+{
+  "name": "leaflet-copy-coordinates-control",
+  "version": "0.1.0",
+  "description": "Works with Leaflet to capture mouseclicks on a map and display the associated coordinates with an easy way to copy them.",
+  "main": "Control.Coordinates.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinjaw/Leaflet-Copy-Coordinates-Control.git"
+  },
+  "keywords": [
+    "leaflet",
+    "clipboard",
+    "coordinates"
+  ],
+  "author": "Chaim Krause",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tinjaw/Leaflet-Copy-Coordinates-Control/issues"
+  },
+  "homepage": "https://github.com/tinjaw/Leaflet-Copy-Coordinates-Control#readme"
+}
