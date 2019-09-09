@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tinjaw/Leaflet-Copy-Coordinates-Control/issues"
   },
-  "homepage": "https://github.com/tinjaw/Leaflet-Copy-Coordinates-Control#readme"
+  "homepage": "https://github.com/tinjaw/Leaflet-Copy-Coordinates-Control#readme",
+  "dependencies": {
+    "leaflet": "^1.5.1"
+  }
 }
