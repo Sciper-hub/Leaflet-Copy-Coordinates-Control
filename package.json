@@ -4,10 +4,11 @@
   "description": "Works with Leaflet to capture mouseclicks on a map and display the associated coordinates with an easy way to copy them.",
   "main": "Control.Coordinates.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:js & npm run build:css",
-    "build:js": "npx minify ./src/Control.Coordinates.js > ./dist/Control.CJoordinates.min.js",
-    "build:css": "npx minify ./src/Control.Coordinates.css > ./dist/Control.Coordinates.min.css"
+    "test": "standard \"src/**/*.js\"",
+    "test:fix": "standard --fix \"src/**/*.js\"",
+    "prepublish": "npm run prepublish:js & npm run prepublish:css",
+    "prepublish:js": "npx uglifyjs ./src/Control.Coordinates.js -o ./dist/Control.CJoordinates.min.js",
+    "prepublish:css": "npx minify ./src/Control.Coordinates.css > ./dist/Control.Coordinates.min.css"
   },
   "repository": {
     "type": "git",
@@ -24,11 +25,13 @@
     "url": "https://github.com/tinjaw/Leaflet-Copy-Coordinates-Control/issues"
   },
   "homepage": "https://github.com/tinjaw/Leaflet-Copy-Coordinates-Control#readme",
-  "dependencies": {
-    "leaflet": "^1.5.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "minify": "^4.1.3",
+    "standard": "^14.1.0",
     "uglify-js": "^3.6.0"
+  },
+  "peerDependencies": {
+    "leaflet": "^1.0.0"
   }
 }
