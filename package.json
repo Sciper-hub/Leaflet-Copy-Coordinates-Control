@@ -6,9 +6,9 @@
   "scripts": {
     "test": "standard \"src/**/*.js\"",
     "test:fix": "standard --fix \"src/**/*.js\"",
-    "prepublish": "npm run prepublish:js & npm run prepublish:css",
-    "prepublish:js": "npx uglifyjs ./src/Control.Coordinates.js -o ./dist/Control.CJoordinates.min.js",
-    "prepublish:css": "npx minify ./src/Control.Coordinates.css > ./dist/Control.Coordinates.min.css"
+    "prepublishOnly": "npm run prepublish:js & npm run prepublish:css",
+    "prepublishOnly:js": "npx uglifyjs ./src/Control.Coordinates.js -o ./dist/Control.CJoordinates.min.js",
+    "prepublishOnly:css": "npx minify ./src/Control.Coordinates.css > ./dist/Control.Coordinates.min.css"
   },
   "repository": {
     "type": "git",
