@@ -10,7 +10,7 @@
  *        promptText: text displayed when user clicks the control
  *        precision: number of decimals to be displayed
  */
-import L from 'leaflet'
+require('leaflet')
 
 L.Control.Coordinates = L.Control.extend({
   options: {
