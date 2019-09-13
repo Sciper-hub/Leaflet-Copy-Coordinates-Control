@@ -10,7 +10,7 @@
  *        promptText: text displayed when user clicks the control
  *        precision: number of decimals to be displayed
  */
-require('leaflet')
+var L = require('leaflet')
 
 L.Control.Coordinates = L.Control.extend({
   options: {
