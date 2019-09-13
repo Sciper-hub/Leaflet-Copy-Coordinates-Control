@@ -6,7 +6,7 @@
   "scripts": {
     "test": "standard \"src/**/*.js\"",
     "test:fix": "standard --fix \"src/**/*.js\"",
-    "prepublishOnly": "npm run prepublish:js & npm run prepublish:css",
+    "prepublishOnly": "npm run prepublishOnly:js & npm run prepublishOnly:css",
     "prepublishOnly:js": "npx uglifyjs ./src/Control.Coordinates.js -o ./dist/Control.CJoordinates.min.js",
     "prepublishOnly:css": "npx minify ./src/Control.Coordinates.css > ./dist/Control.Coordinates.min.css"
   },
