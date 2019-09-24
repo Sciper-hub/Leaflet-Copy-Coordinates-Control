@@ -1,6 +1,6 @@
 {
   "name": "leaflet-copy-coordinates-control",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Works with Leaflet to capture mouseclicks on a map and display the associated coordinates with an easy way to copy them.",
   "main": "Control.Coordinates.js",
   "scripts": {
