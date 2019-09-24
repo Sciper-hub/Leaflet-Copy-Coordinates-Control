@@ -1,13 +1,13 @@
 {
   "name": "leaflet-copy-coordinates-control",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Works with Leaflet to capture mouseclicks on a map and display the associated coordinates with an easy way to copy them.",
   "main": "Control.Coordinates.js",
   "scripts": {
     "test": "standard \"src/**/*.js\"",
     "test:fix": "standard --fix \"src/**/*.js\"",
     "prepublishOnly": "npm run prepublishOnly:js & npm run prepublishOnly:css",
-    "prepublishOnly:js": "npx uglifyjs ./src/Control.Coordinates.js -o ./dist/Control.CJoordinates.min.js",
+    "prepublishOnly:js": "npx uglifyjs ./src/Control.Coordinates.js -o ./dist/Control.Coordinates.min.js",
     "prepublishOnly:css": "npx minify ./src/Control.Coordinates.css > ./dist/Control.Coordinates.min.css"
   },
   "repository": {
