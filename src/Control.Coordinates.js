@@ -2,7 +2,7 @@
 
 /**
  * author Chaim Krause <chaim@chaim.com> (prior author Michal Zimmermann <zimmicz@gmail.com>)
- * Displays coordinates of mouseclick.
+ * Displays coordinates of mouseclick test.
  * @param object options:
  *        position: bottomleft, bottomright etc. (just as you are used to it with Leaflet)
  *        latitudeText: description of latitude value (defaults to lat.)
