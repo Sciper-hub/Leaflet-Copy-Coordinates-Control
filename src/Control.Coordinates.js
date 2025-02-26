@@ -14,11 +14,19 @@ var L = require('leaflet')
 
 L.Control.Coordinates = L.Control.extend({
   options: {
-    position: 'bottomleft',
+    /*position: 'bottomleft',*/
     latitudeText: 'lat.',
     longitudeText: 'lon.',
     promptText: 'Press Ctrl+C to copy coordinates',
-    precision: 4
+    precision: 2
+    position: 'bottomleft',
+    separator: ' : ',
+    emptyString: 'Unavailable',
+    lngFirst: false,
+    numDigits: 5,
+    lngFormatter: undefined,
+    latFormatter: undefined,
+    prefix: ""
   },
 
   initialize: function (options) {
@@ -38,10 +46,8 @@ L.Control.Coordinates = L.Control.extend({
     this._addText(container, map)
 
     L.DomEvent.addListener(container, 'click', function () {
-      /*var lat = L.DomUtil.get(that._lat)*/
-      /*var lng = L.DomUtil.get(that._lng)*/
-      var lng = this.options.lngFormatter ? this.options.lngFormatter(e.latlng.lng) : L.Util.formatNum(e.latlng.lng, this.options.numDigits);
-    var lat = this.options.latFormatter ? this.options.latFormatter(e.latlng.lat) : L.Util.formatNum(e.latlng.lat, this.options.numDigits);
+      var lat = L.DomUtil.get(that._lat)
+      var lng = L.DomUtil.get(that._lng)
       var latTextLen = this.options.latitudeText.length + 1
       var lngTextLen = this.options.longitudeText.length + 1
       var latTextIndex = lat.textContent.indexOf(this.options.latitudeText) + latTextLen
