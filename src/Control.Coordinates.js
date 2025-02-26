@@ -38,8 +38,10 @@ L.Control.Coordinates = L.Control.extend({
     this._addText(container, map)
 
     L.DomEvent.addListener(container, 'click', function () {
-      var lat = L.DomUtil.get(that._lat)
-      var lng = L.DomUtil.get(that._lng)
+      /*var lat = L.DomUtil.get(that._lat)*/
+      /*var lng = L.DomUtil.get(that._lng)*/
+      var lng = this.options.lngFormatter ? this.options.lngFormatter(e.latlng.lng) : L.Util.formatNum(e.latlng.lng, this.options.numDigits);
+    var lat = this.options.latFormatter ? this.options.latFormatter(e.latlng.lat) : L.Util.formatNum(e.latlng.lat, this.options.numDigits);
       var latTextLen = this.options.latitudeText.length + 1
       var lngTextLen = this.options.longitudeText.length + 1
       var latTextIndex = lat.textContent.indexOf(this.options.latitudeText) + latTextLen
