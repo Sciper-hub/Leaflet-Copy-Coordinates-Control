@@ -14,19 +14,12 @@ var L = require('leaflet')
 
 L.Control.Coordinates = L.Control.extend({
   options: {
-    /*position: 'bottomleft',*/
+    position: 'bottomleft',
     latitudeText: 'lat.',
     longitudeText: 'lon.',
     promptText: 'Press Ctrl+C to copy coordinates',
     precision: 2
-    position: 'bottomleft',
-    separator: ' : ',
-    emptyString: 'Unavailable',
-    lngFirst: false,
-    numDigits: 5,
-    lngFormatter: undefined,
-    latFormatter: undefined,
-    prefix: ""
+
   },
 
   initialize: function (options) {
